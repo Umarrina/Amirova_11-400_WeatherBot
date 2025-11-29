@@ -4,8 +4,12 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import ru.kpfu.itis.group400.amirova.view.ChatView;
 
 public class ChatApplication extends Application {
+
+    private ChatView chatView;
+    private BorderPane root;
 
     public static void main(String[] args) {
         launch(args);
@@ -17,12 +21,13 @@ public class ChatApplication extends Application {
         stage.setOnCloseRequest(event -> System.exit(0));
 
         chatView = new ChatView();
-
         root = new BorderPane();
 
         Scene scene = new Scene(root, 400, 400);
         stage.setScene(scene);
         stage.show();
+
+        root.setCenter(chatView.getView());
 
 
     }
