@@ -68,3 +68,8 @@ src/
 │   └── server/
 │       └── ChatBot.java           # Логика обработки команд, HTTP-запросы
 ```
+
+## Автор
+
+Арина Амирова – студентка КФУ ИТИС  
+GitHub: [Umarrina](https://github.com/Umarrina)
